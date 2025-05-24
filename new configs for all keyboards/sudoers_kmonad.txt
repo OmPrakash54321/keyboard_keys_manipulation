@@ -1,0 +1,2 @@
+mcw ALL=(ALL) NOPASSWD: /usr/local/bin/kmonad /tmp/kmonad_configs/kmonad_*.kbd
+mcw ALL=(ALL) NOPASSWD: /home/mcw/kmonad/run_kmonad_all.sh
