@@ -1,0 +1,9 @@
+(defcfg input (device-file "/dev/input/by-id/usb-Logitech_USB_Keyboard-event-kbd") output (uinput-sink "KMonad Output") fallthrough true )
+
+(defsrc caps i j k l )
+
+(defalias cap (tap-hold-next 200 caps (layer-toggle arrows)) )
+
+(deflayer base @cap i j k l )
+
+(deflayer arrows _ up left down rght )
