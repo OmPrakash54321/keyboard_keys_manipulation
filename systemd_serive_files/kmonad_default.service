@@ -1,0 +1,12 @@
+[Unit]
+Description=KMonad keyboard remapping service for all keyboards
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=bash -c 'sudo /usr/local/bin/kmonad /home/mcw/.config/kmonad/kmonad_1.kbd'
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=default.target
